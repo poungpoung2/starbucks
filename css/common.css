@@ -72,6 +72,8 @@ img {
     color: #333;
     background-color: #fff;
 }
+
+/*BACK TO POSITION*/
 .back-to-position {
     opacity: 0;
     transition: 1s;
@@ -86,7 +88,6 @@ img {
     opacity: 1;
     transform: translateX(0);
 }
-
 .show .back-to-position.delay-0 {
     transition-delay: 0s;
 }
@@ -265,8 +266,7 @@ header .badges .badge {
     cursor: pointer;
 }
 
-/* FOOTER */
-
+/*FOOTER*/
 footer {
     background-color: #272727;
     border-top: 1px solid #333;

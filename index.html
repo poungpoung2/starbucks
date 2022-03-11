@@ -50,8 +50,8 @@
             href="https://fonts.googleapis.com/icon?family=Material+Icons"
         />
 
+        <link rel="stylesheet" href="./css/common.css" />
         <link rel="stylesheet" href="./css/main.css" />
-				<link rel="stylesheet" href="./css/common.css" />
 
         <!--GSAP & ScrollToPlugin-->
         <script
@@ -80,7 +80,7 @@
         ></script>
 
         <script defer src="./js/youtube.js"></script>
-				<script defer src="./js/common.js"></script>
+        <script defer src="./js/common.js"></script>
         <script defer src="./js/main.js"></script>
     </head>
     <body>
@@ -441,7 +441,7 @@
             <!--BADGES-->
             <div class="badges">
                 <div class="badge">
-                    <img src="./images/badge3.jpg" alt="Badge" />
+                    <img src="./images/badge1.jpg" alt="Badge" />
                 </div>
                 <div class="badge">
                     <img src="./images/badge2.jpg" alt="Badge" />
@@ -539,12 +539,14 @@
 
                     <div class="inner__right">
                         <h2>스타벅스 프로모션</h2>
-                        <div class="toggle-promotion">
+                        <div class="toggle-promotion open">
                             <div class="material-icons">upload</div>
                         </div>
                     </div>
                 </div>
             </div>
+
+            <!--PROMOTION-->
             <div class="promotion">
                 <div class="swiper-container">
                     <div class="swiper-wrapper">
@@ -595,30 +597,32 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="swiper-pagination"></div>
+
                 <div class="swiper-prev">
-                    <div class="material-icons">arrow_back</div>
+                    <span class="material-icons">arrow_back</span>
                 </div>
                 <div class="swiper-next">
-                    <div class="material-icons">arrow_forward</div>
+                    <span class="material-icons">arrow_forward</span>
                 </div>
             </div>
         </section>
 
-        <!-- Rewards -->
+        <!--REWARDS-->
         <section class="rewards">
             <div class="bg-left"></div>
             <div class="bg-right"></div>
             <div class="inner">
                 <div class="btn-group">
-                    <div class="btn sign-up">회원가입</div>
+                    <div class="btn btn--reverse sign-up">회원가입</div>
                     <div class="btn sign-in">로그인</div>
                     <div class="btn gift">e-Gift 선물하기</div>
                 </div>
             </div>
         </section>
 
-        <!-- YOUTUBE -->
+        <!--YOUTUBE VIDEO-->
         <section class="youtube">
             <div class="youtube__area">
                 <div id="player"></div>
@@ -638,7 +642,7 @@
             </div>
         </section>
 
-        <!-- SEASON-PRODUCT -->
+        <!--SEASON PRODUCT-->
         <section class="season-product scroll-spy">
             <div class="inner">
                 <img
@@ -648,30 +652,29 @@
                 />
                 <img
                     src="./images/season_product_image.png"
-                    alt=""
+                    alt="아이스 커피 블렌드"
                     class="product back-to-position to-right delay-0"
                 />
+
                 <div class="text-group">
                     <img
                         src="./images/season_product_text1.png"
-                        alt=""
+                        alt="상쾌하게 여름을 반겨줄 시즌 원두 아이스 커피 블렌드"
                         class="title back-to-position to-left delay-1"
                     />
                     <img
-                        src="./images/season_product_text1.png"
-                        alt=""
+                        src="./images/season_product_text2.png"
+                        alt="아프리카와 라틴 아메리카 커피의 브렌드로 시트러스함과 은은한 캐러멜 향을 동시에 느낄 수 있으며, 차갑게 즐길 때 풍미가 더욱 깊어지는 원두입니다."
                         class="description back-to-position to-left delay-2"
                     />
                     <div class="more back-to-position to-left delay-3">
-                        <a href="javascript::void(0)" class="btn"
-                            >자세히 보기</a
-                        >
+                        <a href="javascript:void(0)" class="btn">자세히 보기</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- RESERVE COFFEE -->
+        <!--RESERVE COFFEE-->
         <section class="reserve-coffee scroll-spy">
             <div class="inner">
                 <img
@@ -722,20 +725,20 @@
             </div>
         </section>
 
-        <!-- RESERVE STORE -->
+        <!--RESERVE STORE-->
         <section class="reserve-store">
             <div class="inner">
                 <div class="medal">
                     <div class="front">
                         <img
                             src="./images/reserve_store_medal_front.png"
-                            alt=""
+                            alt="R"
                         />
                     </div>
                     <div class="back">
                         <img
                             src="./images/reserve_store_medal_back.png"
-                            alt=""
+                            alt="스타벅스 리저브 매장"
                         />
                         <a href="javascript:void(0)" class="btn"> 매장안내 </a>
                     </div>
@@ -743,7 +746,7 @@
             </div>
         </section>
 
-        <!-- FIND THE STORE -->
+        <!--FIND THE STORE-->
         <section class="find-store scroll-spy">
             <div class="inner">
                 <img
@@ -861,7 +864,7 @@
             </div>
         </section>
 
-        <!-- FOOTER -->
+        <!--FOOTER-->
         <footer>
             <div class="inner">
                 <ul class="menu">
@@ -894,29 +897,29 @@
                         >사이트 맵</a
                     >
                 </div>
-            </div>
 
-            <div class="info">
-              <span>사업자등록번호 201-81-21515</span>
-              <span>(주)스타벅스 코리아 대표이사 이석구</span>
-              <span>TEL : 02) 3015-1100 / FAX : 02) 3015-1106</span>
-              <span>개인정보 책임자 : 강기원</span>
-            </div>
+                <div class="info">
+                    <span>사업자등록번호 201-81-21515</span>
+                    <span>(주)스타벅스 코리아 대표이사 이석구</span>
+                    <span>TEL : 02) 3015-1100 / FAX : 02) 3015-1106</span>
+                    <span>개인정보 책임자 : 강기원</span>
+                </div>
 
-            <p class="copyright">
-              &copy; <span class="this-year"></span> Starbucks Coffee Company. All Rights Reserved.
-            </p>
-            <img src="./images/starbucks_logo_only_text.png" alt="STAR BUCKS" class="logo" />
-      
-          </div>
+                <p class="copyright">
+                    &copy; <span class="this-year"></span> Starbucks Coffee
+                    Company. All Rights Reserved.
+                </p>
+                <img
+                    src="./images/starbucks_logo_only_text.png"
+                    alt="STAR BUCKS"
+                    class="logo"
+                />
+            </div>
         </footer>
 
+        <!--TO TOP BUTTON-->
         <div id="to-top">
-          <span class="material-icons">
-            arrow_upward
-            </span>
+            <div class="material-icons">arrow_upward</div>
         </div>
-
-
     </body>
 </html>
